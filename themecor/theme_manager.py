@@ -72,7 +72,7 @@ class ThemeManager:
         self.console = Console(theme=self.theme)
 
         # Instance Typer pour les commandes CLI
-        self.app = typer.Typer()
+        self.typer = typer
 
     def log(
         self, message: str, level: LogLevel = LogLevel.INFO, emoji: bool = True
