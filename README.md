@@ -19,6 +19,10 @@ from themecor import ThemeManager
 # Initialize the theme manager
 theme_manager = ThemeManager()
 
+# Initialize Typer app for CLI commands
+typer = theme_manager.typer
+app = typer.Typer()
+
 # Use methods to display messages
 theme_manager.info("Information message")
 theme_manager.success("Success message")
