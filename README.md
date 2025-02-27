@@ -44,6 +44,12 @@ theme_manager.update_progress(progress, task_id, 100)
 theme_manager.stop_progress(progress)
 ```
 
+## Demo
+
+```bash
+themecor demo
+themecor config --show-default
+```
 
 ## Features
 - **Centralized Theme Management**: Ensures a consistent look and feel throughout the application.
