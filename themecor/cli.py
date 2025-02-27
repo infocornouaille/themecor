@@ -1,10 +1,13 @@
 # themecor/cli.py
-import typer
 
 from themecor import ThemeManager
 
-app = typer.Typer()
+# Initialize ThemeManager
 theme_manager = ThemeManager()
+
+# Initialize Typer app for CLI commands
+typer = theme_manager.typer
+app = typer.Typer()
 
 
 @app.command()
